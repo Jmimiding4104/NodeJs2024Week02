@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "219bd597-d258-4ca2-bd92-02b8f02df4d1",
+		"name": "w2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26044751"
+	},
+	"item": [
+		{
+			"name": "getPosts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://two024nodew2.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"two024nodew2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"測試1\",\r\n    \"content\":\"測試2\",\r\n    \"tags\":\"測試3\",\r\n    \"type\":\"group\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://two024nodew2.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"two024nodew2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editPost",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"測試1456546\",\r\n    \"content\":\"測試2455455\",\r\n    \"tags\":\"測試354643\",\r\n    \"type\":\"group\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://two024nodew2.onrender.com/posts/",
+					"protocol": "https",
+					"host": [
+						"two024nodew2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePosts",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://two024nodew2.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"two024nodew2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePost",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://two024nodew2.onrender.com/posts/",
+					"protocol": "https",
+					"host": [
+						"two024nodew2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
